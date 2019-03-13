@@ -3,8 +3,8 @@ services:
   - docker
 
 before_install:
-  - docker build -t mridhu/docker-react -f Dockerfile.dev .
+  - docker build -t mridhu/docker-nodeapp -f Dockerfile .
 
 script:
-  - docker run mridhu/docker-react npm run test -- --coverage
+  - docker run mridhu/docker-nodeapp npm run test -- --coverage
  
